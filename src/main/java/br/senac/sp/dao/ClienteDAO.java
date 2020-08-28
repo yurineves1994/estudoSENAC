@@ -19,7 +19,7 @@ public class ClienteDAO {
         try {
             // faz a conexao com o Banco de dados criado na pasta bd
             Connection con = ConexaoDB.obterConexao();
-            //query de requisicao do banco de dados
+            //queery de requisicao do banco de dados
             String query = "select * from cliente";
             PreparedStatement ps = con.prepareStatement(query);
             ResultSet resultado = ps.executeQuery();
